@@ -1,0 +1,163 @@
+
+<!doctype>
+
+<html>
+<head>
+
+	<center><title>REGISTRATION | FORM</title></center>
+	<style>
+	h1:hover{color:red;
+			font-style:italic;
+			}
+	</style>
+	
+	
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script> 
+
+</head>
+<body bgcolor="FFFACD">
+	<h3 align="center"><u>-:REGISTRATION FORM:-<u></h3>
+	
+	
+<form autocomplete="on">
+<table  align="center" border="0" bgcolor="">
+
+<tr>
+	<td>Name:</td>
+	<td><input type="text" name="name" title="Write your name over here."  autofocus required placeholder="Please Type Your Name"></td>
+</tr>
+<tr>
+	<td>Address:</td>
+	<td><textarea name="textarea" rows="3" cols="20" title="Give your Addrress" required></textarea></td>
+</tr>
+<tr>
+	<td>Gender:</td>
+	<td><input type="radio" name="gender" value="MALE">MALE<br>
+	       <input type="radio" name="gender" value="FEMALE">FEMALE<br>
+	</td>
+</tr>
+
+<tr>
+	<td>Birth Date:</td>
+	<td><input type="text" name="text" id="datepicker" ></td>
+</tr>
+
+<tr>
+	<td>Phone no:</td>
+	<td><input type="text" class="textfield" value="" id="txtPhn" name="extra7" onkeypress="return validate(event)" />
+</td>
+</tr>
+
+<tr>
+	<td>Category:</td>
+	<td><select name="select">
+	      
+		   <option selected	>select category</option>
+	       <option>Open</option>
+	       <option>SEBC</option>
+	       <option>other</option>	
+	       </select>
+	</td>
+</tr> 
+<tr>
+	<td>City:</td>
+	<td><select name="select">
+	       <option selected>select city</option>
+	       <option>Ahmedabad</option>
+	       <option>Surat</option>
+	       <option>Mumbai</option>	
+	       </select>
+	</td>
+</tr>
+<tr>
+	<td>Hobbies:</td>
+	<td><input type="checkbox" name="hobbies" value="sport" >Reading<br>
+	       <input type="checkbox" name="hobbies" value="sport">Playing Games<br>
+	       <input type="checkbox" name="hobbies" value="sport">Watching Movie<br>
+	</td>
+</tr>
+
+
+<tr>
+	<td>Attach PID:-</td>
+	<td><input type="file" name="img" multiple ></td>
+</tr>
+
+<tr>
+	<td>E-mail:</td>
+	<td><input type="email" name="E-mail" required ></td>
+</tr>
+
+<tr>
+	<td>Website:</td>
+	<td><input type="url" name="url" pattern="www." required ></td>
+</tr>
+
+</table>
+
+<p align="center">
+<input type="Submit" value="Submit" title="Click here to submit your data.">
+<input type="Reset" value="Reset Form" title="Click here to reset your form.">
+	
+
+</p>
+
+	
+
+</form>	
+
+
+<script type="text/javascript">
+	$(document).ready(function(){
+    $("#datepicker").each(function() {
+        $(this).datepicker();
+    });
+});
+	</script>
+
+	<script type="text/javascript">
+//Function to allow only numbers to textbox
+function validate(key)
+{
+//getting key code of pressed key
+var keycode = (key.which) ? key.which : key.keyCode;
+var phn = document.getElementById('txtPhn');
+//comparing pressed keycodes
+if (!(keycode==8 || keycode==46)&&(keycode < 48 || keycode > 57))
+{
+return false;
+}
+else
+{
+//Condition to check textbox contains ten numbers or not
+if (phn.value.length <10)
+{
+return true;
+}
+else
+{
+return false;
+}
+}
+}
+</script>
+	
+
+
+<script type="txt/javascript">
+		function isNumber(evt) 
+		{
+
+    var charCode = (evt.which) ? evt.which : evt.keyCode;
+    if (charCode > 31 && (charCode < 48 || charCode > 57)) 
+        return false;
+    return true;
+}
+
+	</script>
+
+
+</body>
+</html>	

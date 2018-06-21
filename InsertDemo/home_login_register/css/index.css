@@ -1,0 +1,288 @@
+@import url("Lato/lato.css");
+@font-face {
+    src: url("fonts/BebasNeue.otf");
+    font-family: BebasNeue;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("bg.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.main-heading {
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    color: #FFFFFF;
+    font-size: 45px;
+    padding: 0!important;
+    margin: 20px 0 0 0!important;
+    text-align: center;
+}
+
+.container-fluid {
+    padding: 0!important;
+}
+
+#main-content {
+    width: 80%;
+    margin: 30px auto 0 auto;
+    height: auto;
+}
+
+.box {
+    background: rgba(0, 0, 0, 0.4);
+    height: 300px;
+    border-radius: 5px;
+     text-align: center;
+    margin-left: 15%;
+    margin-top: 5%;
+    width: 75%;
+     float: left;
+    padding: 20px 0;
+}
+
+#login-box {
+    text-align: center;
+    margin-left: 15%;
+    margin-top: 5%;
+    width: 75%;
+    float: left;
+    /*    margin-right: 0px;*/
+    padding: 20px 0;
+}
+
+.area-box {
+    display: block;
+    margin: 15px auto;
+    width: 60%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #FFFFFF;
+    background: transparent;
+    color: #FFFFFF;
+    font-family: "Lato";
+    font-size: 15px;
+    outline: none;
+}
+
+.area-box:focus {
+    border: 1px solid #3498DB;
+}
+
+.input-box {
+    display: block;
+    margin: 15px auto;
+    width: 60%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #FFFFFF;
+    background: transparent;
+    color: #FFFFFF;
+    font-family: "Lato";
+    font-size: 15px;
+    outline: none;
+    height: 36px;
+}
+
+.input-box:focus {
+    border: 1px solid #3498DB;
+}
+
+.button-box {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.button {
+    border: 1px solid #3498DB;
+    border-radius: 100px;
+    font-family: "Lato";
+    padding: 8px 0;
+    outline: none;
+}
+
+.button-one {
+    background: #eee;
+    color: #000;
+    -webkit-transition: 0.2s background, border;
+    transition: 0.2s background, border;
+}
+
+.button-one:hover,
+.button-two:hover {
+    color: #FFFFFF;
+    background: #51A7E0;
+    border: 1px solid #51A7E0;
+}
+
+.button-one:active,
+.button-two:active {
+    color: #FFFFFF;
+    background: #2487C9;
+    border: 1px solid #2487C9;
+}
+
+.button-two {
+    background: transparent;
+    color: #3498DB;
+    -webkit-transition: 0.2s color, background, border;
+    transition: 0.2s color, background, border;
+}
+
+.login-box-button {
+    width: 48%;
+}
+
+h2 {
+    font-family: "Lato"!important;
+    font-weight: 100!important;
+    color: #FFFFFF!important;
+    font-size: 25px!important;
+    text-align: center;
+    margin: 0!important;
+}
+
+h2:after {
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: #3498DB;
+    content: " ";
+    margin: 15px auto 5px auto;
+    font-weight: 100;
+}
+
+.error-box {
+    width: 60%;
+    margin: 10px auto 0 auto;
+    background: #E74C3C;
+    height: auto;
+    color: #FFFFFF;
+    border-radius: 15px;
+    padding: 8px 16px;
+    font-family: "Lato";
+    font-weight: 400;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.success-box {
+    width: 60%;
+    margin: 10px auto 0 auto;
+    background: #27AE60;
+    height: auto;
+    color: #FFFFFF;
+    border-radius: 100px;
+    padding: 8px 16px;
+    font-family: "Lato";
+    font-weight: 400;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#content-area {
+    width: 75%;
+    height: 300px;
+    padding: 20px;
+}
+
+.content {
+    color: #FFFFFF;
+    font-family: "Lato";
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    text-indent: 50px;
+    margin-top: 10px;
+}
+
+.register-item {
+    margin-top: 20px;
+}
+
+.register-label {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: "Lato";
+    font-weight: 300;
+    display: inline;
+    height: 34px;
+    line-height: 34px;
+}
+
+#registrationBox {
+    width: 75%;
+    height: auto;
+    padding: 20px 15px;
+}
+
+.register {
+    width: 80%;
+    margin: 0!important;
+    float: right;
+}
+
+.register-box-button {
+    width: 40%;
+}
+
+.col-md-6 {
+    display: inline;
+}
+
+.col-xs-6 {
+    display: inline!important;
+}
+
+#copyrights {
+    height: auto;
+    margin-top: 20px;
+    padding: 20px 25px;
+}
+
+.copyrights {
+    color: #FFFFFF;
+    font-family: "Lato";
+    font-size: 13px;
+    float: left;
+    margin: 0!important;
+}
+
+.links {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.links li a {
+    float: right;
+    padding: 0 8px;
+    margin: 0;
+    color: #FFFFFF;
+    font-family: "Lato";
+    font-weight: 300;
+}
+
+.tooltip {
+    background-color: #000;
+    border: 1px solid #fff;
+    padding: 10px 15px;
+    width: 200px;
+    display: none;
+    color: #fff;
+    text-align: left;
+    font-size: 12px;
+    -moz-box-shadow: 0 0 10px #000;
+    -webkit-box-shadow: 0 0 10px #000;
+}

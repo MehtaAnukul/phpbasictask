@@ -1,0 +1,59 @@
+@media only screen and (min-width: 1200px) {}
+
+@media only screen and (max-width: 1200px) {
+    h2 {
+        font-size: 20px!important;
+    }
+    .register-label {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 1023px) {}
+
+@media only screen and (max-width: 991px) {
+    #login-box {
+        margin: 0 auto!important;
+        float: none!important;
+        height: auto;
+    }
+    #content-area {
+        width: 75%;
+        float: none!important;
+        margin: 30px auto 0 auto;
+        height: auto;
+    }
+    .main-heading {
+        font-size: 40px!important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .main-heading {
+        font-size: 35px!important;
+    }
+    #login-box {
+        width: 90%;
+    }
+    #content-area {
+        width: 90%;
+    }
+    .register-box-button {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .register-box-button {
+        width: 80%;
+    }
+    .register {
+        width: 90%;
+    }
+    .success-box,
+    .error-box {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 480px) {}
